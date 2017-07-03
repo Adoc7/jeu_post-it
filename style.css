@@ -1,0 +1,41 @@
+div{
+  display:inline-block;
+}
+
+ #case1, #case2,#case3,#case4,#case5,#case6,#case7{
+   width:30px;
+   height:30px;
+   opacity: 0.7;
+   border: 1px solid black;
+}
+
+.forme{
+  width:30px;
+  height:30px;
+  opacity: 0.8;
+  text-align:center;
+  background-color: grey;
+  border: 2px solid black;
+}
+
+#case1{
+  background-color: black;
+}
+#case2{
+  background-color: white;
+}
+#case3{
+  background-color: violet;
+}
+#case4{
+  background-color: blue;
+}
+#case5{
+  background-color: yellow;
+}
+#case6{
+  background-color: red;
+}
+#case7{
+  background-color: green;
+}

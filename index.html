@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>index</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="jquery.js"></script>
+        <script src="jquery-ui.js"></script>
+    </head>
+
+    <body>
+      <section>
+      <div class="carre" id="case1"></div>
+      <div class="carre" id="case2"></div>
+      <div class="carre" id="case3"></div>
+      <div class="carre" id="case4"></div>
+      <div class="carre" id="case5"></div>
+      <div class="carre" id="case6"></div>
+      <div class="carre" id="case7"></div>
+      </section>
+
+
+
+      <div id="case"></div>
+
+      <!-- création d'une div vide qui recevra le script par l'ID -->
+      <div id="grille">
+      </div>
+
+
+      <script>
+// Création d'une boucle de 256 cases
+      // for (var i = 1; i < 257; i++) {
+        // $ est le selecteur
+        // #grille est l'ID qu'on affichera dans la div
+        // append permet de juxtaposer les cases
+
+          // $("#grille").append("<div class='forme'>"+i+"</div>");
+
+          // % est le modulo (reste de la division) qui permet de retourner à la ligne toutes les 16 cases
+  //     if (i%16==0){
+  //     $("#grille").append("<br/>");
+  //     }
+  // }
+
+  for (var j = 1; j < 17; j++)
+  {
+  for (var i = 1; i < 17; i++) {
+    $("#grille").append("<div class='forme'>"+i+"</div>");
+        if (i%16==0){
+        $("#grille").append("<br/>");
+        }
+    }
+  }
+    $('.carre').draggable({
+      snap : '.forme' // chaque élément ayant la classe "forme" exercera une attraction
+      });
+
+$(".forme").droppable({
+});
+
+        </script>
+    </body>
+    </html>
